@@ -13,6 +13,7 @@ app.use(cors())
 app.use(express.static('public'))
 const port = 3000
 
+// App listen
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 app.get('/api/books', async(req, res) => {
